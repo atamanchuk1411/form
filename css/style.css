@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/Roboto-Italic.woff') format('woff'),
+        url('../fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Medium.woff') format('woff'),
+        url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    cursor: url(../img/cursor.cur), default;
+    transition: .5s;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    font-size: 30px;
+    color: #1f222c;
+    font-family: Roboto Slab;
+}
+
+h2 {
+    padding-bottom: 28px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+}
+
+h3 {
+    padding-bottom: 26px;
+    font-size: 18px;
+    color: #1f222c;
+}
+
+textarea {
+    font-style: 14px;
+    font-family: "Roboto";
+    min-height: 130px;
+}
+
+input, textarea, select {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+input:focus, textarea:focus, select:focus, {
+    appearance: none;
+    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
+    border: 1px solid #3e6aff;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+}
+
+.align_center {
+    display: flex;
+    align-items: center;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.child1 select, textarea {
+    width: 100%;
+}
+
+.parent {
+    padding-bottom: 50px;
+    flex-direction: row;
+    gap: 350px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.parent .child1 {
+    max-width: 330px;
+}
+
+.parent .child6 {
+    position: relative;
+    max-width: 310px;
+}
+
+.child1 input {
+    width: 100%;
+    color: #b3b3b3;
+}
+
+.child1 input, .child1 option, .child1 textarea, .child1 select {
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.child1 button {
+    padding: 15px;
+    width: 100%;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    background-color: #12d661;
+}
+
+.child6 form {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+    position: relative;
+    padding: 27px 25px 21px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow:0px 5px 6px rgba(0,0,0,0.15);
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+
+.child6 .input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 36px;
+    padding-left: 15px;
+}
+
+.child6 p, .child6 input {
+    margin-bottom: 11px;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.child6 a {
+    padding-bottom: 12px;
+    font-size: 13px;
+    color: #3e6aff;
+}
+
+.remember{
+    padding: 15px 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    color: #1f222c;
+}
+
+.cross {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    background-color: #fafafa;
+    border: none;
+}
+
+.remember input {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 4px 0;
+}
+
+.child6 button {
+    padding: 15px 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: #12d661;
+    border: none;
+    border-radius: 3px;
+}
+
+.child2, .child3, .child4, .child5 {
+    padding: 50px 0;
+}
+
+.child2, .child3, .child4 {
+    border-bottom: 1px solid #dcdcde;
+}
+
+.rc {
+    flex-direction: row;
+    gap: 63px;
+}
+
+.radio, .checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio label, .checkbox label {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #1f222c;
+}
+
+.radio input, .checkbox input, .status input {
+    margin-right: 10px;
+}
+
+.greybox {
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.greybox section {
+    display: flex;
+    flex-direction: row;
+}
+
+.greybox p {
+    padding-right: 10px;
+    color: #b3b3b3;
+}
+
+.status {
+    padding-bottom: 15px;
+    gap: 25px;
+}
+
+.status label {
+    display: flex;
+    align-items: center;
+    color: #1f222c;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+}
+
+.date p {
+    padding-right: 48px;
+}
+
+.date input {
+    padding: 15px;
+}
+
+.child3 form {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+.sex label {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sex span {
+    transition: .5s;
+}
+
+.man input {
+    transition: .5s;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmAdu4iphj5Xtxs-KOjsk6zfsW9M8Tb9isxDdIqDGQzwuxVQLjrUzrIA&s) no-repeat center/cover;
+}
+
+.woman input {
+    transition: .5s;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1cWD8CCYn_OaN0UzrU2i_u5YThj5Lt1QlQBwYHyCRkdRwOBkXOfhJU6S&s), no-repeat center/cover;
+}
+
+.sex input {
+    appearance: none;
+    outline: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    filter: grayscale(1);
+}
+
+.sex input:checked {
+    border: 2px solid #3e6aff;
+    filter: grayscale(0);
+}
+
+.man input:checked + span {
+    color: #3e6aff;
+}
+
+.woman input:checked + span {
+    color: #3e6aff;
+}
+
+.extra_information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.extra_information div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.extra_information p {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+
+.extra_information input {
+    appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 45px;
+    height: 25px;
+    border-radius: 13px;
+    background-color: #cfcfd1;
+    transition: .5s;
+}
+
+.extra_information span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    border-radius: 11px;
+    background-color: #fff;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.extra_information input:checked {
+    background-color: #3e6aff;
+}
+
+.extra_information input:checked + span {
+    left: calc(100% - 23px);
+}
+
+.child4 table {
+    width: 55%;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.child4 tr {
+    padding-bottom: 15px;
+}
+
+.child4 td {
+    color: #1f222c;
+}
+
+.child4 input, .child4 textarea, .child4 select {
+    padding: 11px 16px;
+    box-sizing: border-box;
+}
+
+.text {
+    min-width: 160px;
+}
+
+.input {
+    width: 100%;
+}
+
+.arrow {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.arrow:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    border: 5px solid transparent;
+    border-top-color: #000;
+    transform: rotateY(-25%);
+    z-index: -1;
+}
+
+.gender {
+    padding: 6px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+
+.gender label {
+    display: flex;
+    gap: 8px;
+}
+
+.file {
+    display: none;
+}
+
+.file + label {
+    display: inline-block;
+    padding: 12px 37px;
+    color: #fff;
+    background-color: #3e6aff;
+    border-radius: 3px;
+}
+
+.padding {
+    vertical-align: top;
+    padding-top: 11px;
+}
+
+.child4 textarea {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.child4 button {
+    padding: 13px 0;
+    color: #fff;
+    background-color: #12d661;
+    border: none;
+    border-radius: 3px;
+}

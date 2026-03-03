@@ -218,8 +218,69 @@
         </div>
         <div class="child5">
             <h2>05. форма таблицею</h2>
+            <h3>Оформлення заявки</h3>
             <form action="index.php" method="post">
-                
+                <table>
+                    <tr class="first">
+                        <td>
+                            <p>Прізвище та ім’я</p>
+                            <label><input class="pad" type="text" name="username"></label>
+                        </td>
+                        <td>
+                            <p>Ел. пошта</p>
+                            <label><input class="pad" type="email" name="email"></label>
+                        </td>
+                        <td>
+                            <p>Телефон</p>
+                            <label><input class="pad" type="tel" name="phone"></label>
+                        </td>
+                    </tr>
+                    <tr class="second">
+                        <td>
+                            <p>Країна</p>
+                            <label>
+                                <select class="pad">
+                                    <option value="Україна">Україна</option>
+                                    <option value="Індонезія" selected>Індонезія</option>
+                                    <option value="США">США</option>
+                                </select>
+                            </label>
+                        </td>
+                        <td colspan="2">
+                            <p>Адреса</p>
+                            <label><input class="adress" type="adress" name="adress"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Місто</p>
+                            <label><input class="pad" type="text" name="city"></label>
+                        </td>
+                        <td>
+                            <p>Будинок</p>
+                            <label><input class="pad" type="text" name="house"></label>
+                        </td>
+                        <td>
+                            <p>Поштовий індекс</p>
+                            <label><input class="pad" type="text" name="postcode"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label class="label">
+                                <span class="parent">
+                                    <input type="checkbox" checked>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                                </span>
+                                Я погоджуюсь з правилами оплати та доставки товару
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <button class="reset" type="reset">Повернутися назад</button>
+                    <button class="submit" type="submit">Оформити покупку</button>
+                </div>
             </form>
         </div>
     </main>

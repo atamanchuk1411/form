@@ -116,12 +116,19 @@ textarea {
     font-style: 14px;
     font-family: "Roboto";
     min-height: 130px;
+    max-height: 200px;
+    resize: vertical;
 }
 
 input, textarea, select {
     border: 1px solid #cccccc;
     border-radius: 3px;
     transition: .5s;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
 
 input:hover, textarea:hover, select:hover {
@@ -151,7 +158,6 @@ select {
     padding-bottom: 50px;
     flex-direction: row;
     gap: 350px;
-    border-bottom: 1px solid #dcdcde;
 }
 
 .parent .child1 {
@@ -225,12 +231,62 @@ select {
 }
 
 .remember{
+    max-height: 15px;
     padding: 15px 0 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
     font-size: 13px;
     color: #1f222c;
+    cursor: pointer;
+}
+
+.child5 .label {
+    max-height: 63px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    line-height: 1.6em;
+    cursor: pointer;
+}
+
+.child6 .parent{
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-top: 45px;
+}
+
+.child6 .parent input{
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #c5c5d4;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.child6 .parent input:checked {
+    border-color: #244dd7;
+}
+
+.child6 .parent svg{
+    display: none;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    fill: #244dd7;
+}
+
+.child6 input:checked + svg{
+    display: block;
 }
 
 .cross {
@@ -309,6 +365,58 @@ select {
 .greybox p {
     padding-right: 10px;
     color: #b3b3b3;
+}
+
+.greybox .label {
+    max-height: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #1f222c;
+    cursor: pointer;
+}
+
+.greybox .parent{
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-top: 45px;
+}
+
+.greybox .parent input{
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.greybox .parent input:checked {
+    border-color: #244dd7;
+}
+
+.greybox .parent svg{
+    display: none;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    fill: #244dd7;
+}
+
+.greybox input:checked + svg{
+    display: block;
+}
+
+.greybox .label input {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 4px 0;
 }
 
 .status {

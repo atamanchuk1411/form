@@ -100,6 +100,7 @@ h1 {
 }
 
 h2 {
+    text-align: left;
     padding-bottom: 28px;
     font-size: 20px;
     text-transform: uppercase;
@@ -131,7 +132,7 @@ button {
     cursor: pointer;
 }
 
-input:hover, textarea:hover, select:hover {
+input:focus, textarea:focus, select:focus {
     box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
 }
 
@@ -180,6 +181,10 @@ select {
     margin-bottom: 10px;
 }
 
+.child1 .arrow:before {
+    top: 40%;
+}
+
 .child1 button {
     padding: 15px;
     width: 100%;
@@ -195,16 +200,15 @@ select {
     background-color: #07be51;
 }
 
-.child6 form {
-    position: sticky;
-    top: 0;
-    left: 0;
+.child6 {
+    min-width: 310px;
 }
 
 .wrapper {
-    position: relative;
+    position: fixed;
+    top: 35%;
+    right: 13%;
     padding: 27px 25px 21px;
-    width: 100%;
     border-radius: 5px;
     box-shadow:0px 5px 6px rgba(0,0,0,0.15);
     background-color: #fafafa;
@@ -239,17 +243,6 @@ select {
     gap: 10px;
     font-size: 13px;
     color: #1f222c;
-    cursor: pointer;
-}
-
-.child5 .label {
-    max-height: 63px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    font-size: 13px;
-    line-height: 1.6em;
     cursor: pointer;
 }
 
@@ -300,6 +293,10 @@ select {
     border: none;
 }
 
+.cross:focus {
+    box-shadow: none;
+}
+
 .remember input {
     width: 15px;
     height: 15px;
@@ -346,8 +343,65 @@ select {
     color: #1f222c;
 }
 
+.radio input {
+    box-shadow: none;
+}
+
 .radio input, .checkbox input, .status input {
     margin-right: 10px;
+}
+
+.label1{
+    max-height: 15px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #1f222c;
+    cursor: pointer;
+}
+
+.parent1{
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.parent1 input{
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #c5c5d4;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.parent1 input:checked {
+    border-color: #244dd7;
+}
+
+.parent1 svg{
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    fill: #244dd7;
+}
+
+.label1 input:checked + svg{
+    display: block;
+}
+
+.label1 input {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 4px 0;
 }
 
 .greybox {
@@ -479,7 +533,6 @@ select {
 }
 
 .sex input:checked {
-    border: 1px solid #3e6aff;
     filter: grayscale(0);
 }
 
@@ -727,6 +780,18 @@ select {
     padding: 12px 15px;
     width: 100%;
     max-width: 220px;
+}
+
+.child5 .arrow:after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 33px;
+    height: 20px;
+    width: 1px;
+    background-color: #ccc;
+    transform: rotateY(-50%);
+    z-index: -1;
 }
 
 .adress {

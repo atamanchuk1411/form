@@ -16,7 +16,7 @@
                     <label><input type="text" name="name" placeholder="Введіть ім'я"></label>
                     <label for=""><input type="email" name="email" placeholder="Email"></label>
                     <div class="arrow">
-                        <select name="users city">
+                        <select name="usersCity">
                             <option selected value="Ваше місто">Ваше місто</option>
                             <option value="Хмельницький">Хмельницький</option>
                             <option value="Київ">Київ</option>
@@ -50,23 +50,21 @@
             </div>
             <div class="child6">
                 <h2>06. фіксована форма</h2>
-                <form action="index.php" method="post">
-                    <div class="wrapper">
-                        <label><input class="cross" type="reset" value="x"></label>
-                        <p>Логін</p>
-                        <label><input class="input" type="text" name="login"></label>
-                        <p>Пароль</p>
-                        <label><input class="input" type="password" name="password"></label>
-                        <a href="#">Забули пароль?</a>
-                        <label class="remember">
-                            <span class="parent">
-                                <input type="checkbox" checked>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                            </span>
-                            Запам’ятати пароль
-                        </label>
-                        <button type="submit">Увійти</button>
-                    </div>
+                <form class="wrapper" action="index.php" method="post">
+                    <label><input class="cross" type="reset" value="x"></label>
+                    <p>Логін</p>
+                    <label><input class="input" type="text" name="login"></label>
+                    <p>Пароль</p>
+                    <label><input class="input" type="password" name="password"></label>
+                    <a href="#">Забули пароль?</a>
+                    <label class="remember">
+                        <span class="parent">
+                            <input type="checkbox" checked>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                        </span>
+                        Запам’ятати пароль
+                    </label>
+                    <button type="submit">Увійти</button>
                 </form>
             </div>
         </div>
@@ -80,9 +78,27 @@
                         <label><input type="radio" name="delivery" value="self-export" checked>Самовивіз</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" name="actions" value="conditions">Прочитав умови договору</label>
-                        <label><input type="checkbox" name="actions" value="PDV">Згідний з ПДВ 9%</label>
-                        <label><input type="checkbox" name="actions" value="news">Отримувати новини на ел. пошту</label>
+                        <label class="label1">
+                            <span class="parent1">
+                                <input type="checkbox" name="actions" value="conditions">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                            </span>
+                            Прочитав умови договору
+                        </label>
+                        <label class="label1">
+                            <span class="parent1">
+                                <input type="checkbox" name="actions" value="PDV">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                            </span>
+                            Згідний з ПДВ 9%
+                        </label>
+                        <label class="label1">
+                            <span class="parent1">
+                                <input type="checkbox" name="actions" value="news">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                            </span>
+                            Отримувати новини на ел. пошту
+                        </label>
                     </div>
                 </div>
                 <div class="greybox">
@@ -250,7 +266,7 @@
                     <tr class="second">
                         <td>
                             <p>Країна</p>
-                            <label>
+                            <label class="arrow">
                                 <select class="pad">
                                     <option value="Україна">Україна</option>
                                     <option value="Індонезія" selected>Індонезія</option>

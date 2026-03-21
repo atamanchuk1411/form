@@ -136,6 +136,10 @@ button {
     cursor: pointer;
 }
 
+label {
+    cursor: pointer;
+}
+
 input:focus, textarea:focus, select:focus {
     box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
 }
@@ -464,7 +468,7 @@ select {
 .greybox .parent svg{
     display: none;
     position: absolute;
-    top: 51%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -70%);
     fill: #244dd7;

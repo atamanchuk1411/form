@@ -85,8 +85,8 @@ body {
 }
 
 main {
-    max-width: 960px;
-    margin: 0 auto;
+    width: 74%;
+    margin: 0 13%;
     padding: 0 15px;
 }
 
@@ -126,6 +126,10 @@ input, textarea, select {
     border-radius: 3px;
     transition: .5s;
     cursor: pointer;
+}
+
+input:disabled {
+    background-color: #f7f7f7;
 }
 
 button {
@@ -172,7 +176,6 @@ select {
 
 .child1 input {
     width: 100%;
-    color: #b3b3b3;
 }
 
 .child1 input, .child1 option, .child1 textarea, .child1 select {
@@ -213,6 +216,7 @@ select {
     box-shadow:0px 5px 6px rgba(0,0,0,0.15);
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
+    z-index: 3;
 }
 
 .child6 .input {
@@ -225,7 +229,6 @@ select {
 .child6 p, .child6 input {
     margin-bottom: 11px;
     font-size: 13px;
-    color: #b3b3b3;
 }
 
 .child6 a {
@@ -324,6 +327,10 @@ select {
 
 .child2, .child3, .child4 {
     border-bottom: 1px solid #dcdcde;
+}
+
+.child2 {
+    border-top: 1px solid #dcdcde;
 }
 
 .rc {
@@ -437,7 +444,7 @@ select {
     display: inline-block;
     width: 15px;
     height: 15px;
-    padding-top: 45px;
+    padding-top: 50px;
 }
 
 .greybox .parent input{
@@ -497,10 +504,20 @@ select {
     padding: 15px;
 }
 
+label.disabled-color {
+    color: #b3b3b3;
+}
+
 .child3 form {
     display: flex;
     flex-direction: row;
     gap: 300px;
+}
+
+.sex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .sex label {
